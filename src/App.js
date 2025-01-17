@@ -1,5 +1,5 @@
 import React from "react";
-import Contact from "./Pages./Contact.component"
+import Contact from "./Pages/Contact/Contact.jsx"
 
 function App() {
   return (
