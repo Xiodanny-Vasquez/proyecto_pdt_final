@@ -9,9 +9,9 @@ function Contact() {
     <div className="contact-page">
       <h1>¿Necesitas ayuda o <br />tienes alguna pregunta?</h1>
       <p className="text-page">
-        Nos encantaría ayudarte a disfrutar de una experiencia única con <br /> nuestros cócteles
-        Queremos escuchar tus ideas, resolver tus dudas y <br /> mejorar junto a ti, porque tu opinión
-        es fundamental para que sigamos <br /> creando momentos inolvidables.
+      Nos encantaría ayudarte a disfrutar de una experiencia única con nuestras historias terrorificas.
+      <br />Queremos escuchar tus ideas, resolver tus dudas y mejorar junto a ti, <br /> porque tu opinión
+        es fundamental para que sigamos <br /> creando momentos terrorificamente inolvidables.
       </p>
       
       <div className="contact-content">
