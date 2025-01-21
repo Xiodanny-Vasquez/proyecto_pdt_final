@@ -1,15 +1,76 @@
 .footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
-  
-  .footer p {
-    margin: 0;
-    font-size: 14px;
-  }
-  
+  background-color: #1c1c1c;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.footer-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.7);
+}
+
+.footer p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #d32f2f;
+  font-family: 'Creepster', cursive;
+}
+
+.footer-links {
+  margin-top: 15px;
+}
+
+.footer-link {
+  color: #d32f2f;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: #ff5252;
+}
+
+.footer-social {
+  margin-top: 15px;
+}
+
+.social-icon {
+  color: #d32f2f;
+  margin: 0 10px;
+}
+
+.social-icon:hover {
+  color: #ff5252;
+}
+
+.scroll-top {
+  display: inline-block;
+  margin-top: 20px;
+  color: #d32f2f;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.scroll-top:hover {
+  color: #ff5252;
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Agregar el efecto hover para la imagen, para darle un toque dinámico */
+.footer img:hover {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen cuando el cursor pasa sobre ella */
+  transition: all 0.3s ease;
+}
