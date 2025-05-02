@@ -1,0 +1,101 @@
+/* src/pages/home.css */
+
+.hero-section {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  .hero-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #dc2626; /* rojo sangre */
+  }
+  
+  .hero-section p {
+    margin-top: 1rem;
+    font-style: italic;
+    font-size: 1.125rem;
+  }
+  
+  .hero-section .subtext {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .promo-section {
+    background-color: #1a0000;
+    color: white;
+    padding: 3rem 1rem;
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .promo-section img {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px #000;
+  }
+  
+  .promo-section .promo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  
+  .promo-section .promo-text p {
+    font-style: italic;
+    font-size: 1.125rem;
+  }
+  
+  .promo-section .promo-text button {
+    background-color: #b91c1c;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    border-radius: 0.375rem;
+    transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .promo-section .promo-text button:hover {
+    background-color: #991b1b;
+  }
+  
+  .carousel-section {
+    background-color: black;
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .carousel-section h3 {
+    font-size: 1.75rem;
+    color: #dc2626;
+    margin-bottom: 1.5rem;
+  }
+  
+  .carousel-section img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  }
+  
+  .final-text {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-style: italic;
+    font-size: 0.875rem;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  
