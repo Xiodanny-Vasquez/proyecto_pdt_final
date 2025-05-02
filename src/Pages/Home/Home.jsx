@@ -11,39 +11,39 @@ const Home = () => {
       <section className="hero-section">
         <h2>PORTAL DEL TERROR</h2>
         <p>Relatos que te helarán la sangre… ¿te atreves a entrar?</p>
-        <p className="subtext">No apto para almas LIGTHSENSITIVE 💀</p>
+        <p className="subtext">No apto para almas Sensibles 💀</p>
         <Carousel />
       </section>
 
       {/* Promoción con imágenes laterales y botón de suscripción */}
-      <section className="promo-section grid grid-cols-1 md:grid-cols-3">
-        <img src="/img/promo1.jpg" alt="Mujer sombra" />
-        
+      <section className="promo-section">
+        <img src="/Assets/3brujas.jpg" alt="" className="promo-img" />
+
         <div className="promo-text">
           <p>
-            “Cada historia es un tormento donde lo escondido… 
-            se transforma en terror palpable. Suscríbete para
-            no perderte ningún capítulo.”
+            “Cada historia es un susurro desde la oscuridad... 
+            y ya es demasiado tarde para taparte los oídos.”
           </p>
           <button>SUSCRÍBETE</button>
         </div>
 
-        <img src="/img/promo2.jpg" alt="Monja terrorífica" />
+        <img src="/Assets/monjas1.jpg" alt="MIEDO" className="promo-img" />
       </section>
 
       {/* Carrusel de historias destacadas */}
       <section className="carousel-section">
         <h3>¿Qué clase de horror quieres vivir hoy?</h3>
         <Carousel1 />
+        <br></br>
       </section>
 
       {/* Texto final oscuro y misterioso */}
       <section className="final-text">
-        “Cada historia en nuestra colección es una puerta 
-        encantadora hacia lo inexplicable. Sumérgete leyendo 
-        donde cada palabra deja una cicatriz, donde cada página 
-        grita por justicia fantasmal, y los ecos continúan mucho 
-        después de que hayas cerrado el portal…”
+        “"Cada historia en nuestra colección es una puerta entreabierta
+         hacia lo desconocido. Sumérgete en relatos donde cada palabra 
+         está empapada de oscuridad, cada línea susurra secretos prohibidos, 
+         y cada final deja una marca que jamás podrás borrar. 
+         Porque aquí, las historias no se cuentan... se sufren."”
       </section>
     </div>
   );

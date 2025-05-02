@@ -2,13 +2,13 @@ import { useState, useEffect } from 'react';
 import './Carousel.css';
 
 const images = [
-  '/Assets/3brujas.jpg',
-  '/Assets/cementerio.jpg',
+  '/Assets/casaCementerio.jpg',
+  '/Assets/portal.jpg',
   '/Assets/diablo.jpg',
-  '/Assets/Y.jpg',
-  '/Assets/1.jpg',
-  '/Assets/4.jpg',
-  '/Assets/5.jpg',
+  '/Assets/Ñ.jpeg',
+  '/Assets/U.jpg',
+  '/Assets/M.png',
+  '/Assets/bb.png',
 ];
 
 export const Carousel = () => {
@@ -60,11 +60,11 @@ export const Carousel = () => {
 // === Carrusel Cover Flow 3D (tipo imagen que enviaste) ===
 export const Carousel1 = () => {
   const cards = [
-    { title: 'titulo', content: 'brujas', image: '/Assets/Y.jpg' },
-    { title: 'Slide 2', content: 'Facere magni sapiente veniam, repellendus.', image: '/Assets/Y.jpg' },
-    { title: 'Slide 3', content: 'Expedita labore voluptas in saepe.', image: '/Assets/Y.jpg' },
-    { title: 'Slide 4', content: 'Beatae voluptatem quasi accusamus.', image: '/Assets/Y.jpg' },
-    { title: 'Slide 5', content: 'Voluptas laborum excepturi possimus nam.', image: '/Assets/Y.jpg' },
+    { title: 'El Silente', image: '/Assets/Y.jpg', content:'En la mansión olvidada de las colinas, una joven médium invoca sin saberlo a "El Silente", un demonio ancestral que se alimenta del alma de quienes osan llamarlo.  Las sombras cobran vida, y el ritual jamás se detiene… incluso después de la muerte.',},
+    { title: 'Lirak', image: '/Assets/K.jpeg', content:'Cada noche de luna roja, Lirak despierta en el cementerio de los condenados, afilando la hoja con la sangre de su próxima víctima. No busca venganza, sino arte: su lienzo favorito es la carne humana.', },
+    { title: 'El Devorador', image: '/Assets/CC.png', content:'Desde el abismo se alzó un demonio que no olvida: el Devorador de Lamentos. Quien ose pronunciar su nombre frente a su tumba, será cazado, no por venganza… sino para unirse a su legión de sombras.', },
+    { title: 'Cripta de Hollowridge', image: '/Assets/cementerio.jpg', content:'La vieja capilla de Hollowridge nunca fue abandonada… solo sellada. Cada noche de luna llena, un canto gutural emana desde las criptas, llamando a los muertos a marchar. Y quien lo escuche, ya no pertenece al mundo de los vivos.', },
+    { title: 'Demonio Infernal', image: '/Assets/C.jpeg', content:'Una criatura ancestral con ojos como llamas y un aura de sangre maldita acecha las sombras. Su presencia desata caos y horror, dejando un rastro de muerte y desesperación a su paso. Cada mirada que captura condena a su víctima a un destino de sufrimiento eterno.', },
   ];
 
   const [current, setCurrent] = useState(2);
@@ -100,7 +100,7 @@ export const Carousel1 = () => {
             <div key={i} className={className}>
              <img src={card.image} alt={card.title} className="carousel1-img" />
              <h3>{card.title}</h3>
-             <p>{card.content}</p>
+             <p>{card.content}</p>  
             </div>
           );
         })}
