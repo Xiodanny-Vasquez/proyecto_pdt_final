@@ -7,6 +7,12 @@ import Contact from "./Pages/Contact/Contact.jsx";
 import Stories from "./Pages/Stories/Stories.jsx";
 import Footer from "./Pages/Footer/Footer.jsx";
 import About from "./Pages/About/About.jsx";
+import Shopping from "./Pages/Shopping/Shopping.jsx";
+import Pago from "./Pages/Shopping/Pago.jsx";
+import Confirmacion from "./Pages/Shopping/Confirmacion.jsx";
+import Login from "./Pages/Login/Login.jsx";
+import Register from "./Pages/Login/Register.jsx";
+import HorrorStories from "./Pages/HorrorStories/HorrorStories.jsx";
 
 function App() {
   return (
