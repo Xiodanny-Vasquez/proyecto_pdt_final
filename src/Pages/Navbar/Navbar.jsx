@@ -1,19 +1,25 @@
 import React from 'react';
-import { FaUser, FaShoppingCart, FaSearch } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
+import { FaShoppingCart, FaUser } from 'react-icons/fa';
+import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <navbar className="bg-black text-white flex justify-between items-center px-4 py-3 shadow-lg">
-      <div className="flex items-center gap-2">
-        <img src="/logo.png" alt="logo" className="w-10 h-10" />
-        <h1 className="text-xl font-bold tracking-wider">Portal del Terror</h1>
+    <nav className="navbar">
+      <div className="navbar-logo">
+        <img src="/logopdt.jpg" alt="Logo Portal del Terror" />
       </div>
-      <nav className="flex items-center gap-4 text-lg">
-        <FaSearch />
-        <FaUser />
-        <FaShoppingCart />
-      </nav>
-    </navbar>
+      <ul className="navbar-links">
+        <li><NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>Inicio</NavLink></li>
+        <li><NavLink to="/historias" className={({ isActive }) => isActive ? 'active' : ''}>Historias</NavLink></li>
+        <li><NavLink to="/contacto" className={({ isActive }) => isActive ? 'active' : ''}>Contacto</NavLink></li>
+        <li><NavLink to="/sobre nosotros" className={({ isActive }) => isActive ? 'active' : ''}>Sobre nosotros</NavLink></li>
+      </ul>
+      <div className="navbar-icons">
+        <FaShoppingCart className="icon" />
+        <FaUser className="icon" />
+      </div>
+    </nav>
   );
 };
 
