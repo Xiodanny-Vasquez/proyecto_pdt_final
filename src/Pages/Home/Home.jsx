@@ -34,7 +34,6 @@ const Home = () => {
       <section className="carousel-section">
         <h3>¿Qué clase de horror quieres vivir hoy?</h3>
         <Carousel1 />
-        <br></br>
       </section>
 
       {/* Texto final oscuro y misterioso */}
@@ -45,6 +44,7 @@ const Home = () => {
          y cada final deja una marca que jamás podrás borrar. 
          Porque aquí, las historias no se cuentan... se sufren."”
       </section>
+
     </div>
   );
 };

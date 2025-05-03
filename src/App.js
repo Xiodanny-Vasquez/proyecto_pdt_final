@@ -7,6 +7,7 @@ import Contact from "./Pages/Contact/Contact.jsx";
 import Stories from "./Pages/Stories/Stories.jsx";
 import Footer from "./Pages/Footer/Footer.jsx";
 import About from "./Pages/About/About.jsx";
+import HorrorStories from "./Pages/HorrorStories/HorrorStories.jsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/historias" element={<Stories />} />
         <Route path="/sobre nosotros" element={<About />} />
       </Routes>
+      <HorrorStories />
       <Footer /> {/* Siempre visible */}
     </Router>
   );
