@@ -107,8 +107,8 @@
 
 .slide {
   position: absolute;
-  width: 250px;
-  height: 600px; /* altura base para todos */
+  width: 400px;
+  height: 720px; /* altura base para todos */
   padding: 20px;
   background: rgb(41, 28, 28);
   border-radius: 12px;
@@ -127,7 +127,7 @@
   opacity: 1;
   transform: scale(1) translateZ(0);
   z-index: 3;
-  height: 800px; /* imagen activa más alta */
+  height: 900px; /* imagen activa más alta */
 }
 
 .slide.left {
@@ -160,13 +160,13 @@
 .slide h3 {
   margin: 0;
   font-family: serif;
-  font-size: 2rem;
+  font-size: 40px;
   color: #ff3c3c;
 }
 
 .slide p {
   font-family:serif;
-  font-size: 18px;
+  font-size: 25px;
   color: #ffffff;
 }
 
