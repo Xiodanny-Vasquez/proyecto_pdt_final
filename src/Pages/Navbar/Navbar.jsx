@@ -13,12 +13,16 @@ const Navbar = () => {
         <li><NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>Inicio</NavLink></li>
         <li><NavLink to="/historias" className={({ isActive }) => isActive ? 'active' : ''}>Historias</NavLink></li>
         <li><NavLink to="/contacto" className={({ isActive }) => isActive ? 'active' : ''}>Contacto</NavLink></li>
-        <li><NavLink to="/sobre nosotros" className={({ isActive }) => isActive ? 'active' : ''}>Sobre nosotros</NavLink></li>
+        <li><NavLink to="/sobre-nosotros" className={({ isActive }) => isActive ? 'active' : ''}>Sobre nosotros</NavLink></li>
       </ul>
       <div className="navbar-icons">
-        <FaShoppingCart className="icon" />
-        <FaUser className="icon" />
-      </div>
+        <NavLink to="/carrito">
+          <FaShoppingCart className="icon" title="Carrito" />
+        </NavLink>
+        <NavLink to="/login">
+    <FaUser className="icon" title="Usuario" />
+  </NavLink>
+</div>
     </nav>
   );
 };

@@ -1,0 +1,32 @@
+/* Confirmacion.css */
+.confirmacion-container {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  padding: 40px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.confirmacion-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: serif; /* Cambié la fuente para los títulos a serif */
+  color: #ff0000; /* Color rojo para los títulos */
+}
+
+.confirmacion-container p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Cambié la fuente para los subtítulos */
+}
+
+.estado-aprobado {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.estado-rechazado {
+  color: #f44336;
+  font-weight: bold;
+}

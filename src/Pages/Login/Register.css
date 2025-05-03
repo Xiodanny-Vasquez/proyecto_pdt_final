@@ -1,0 +1,115 @@
+.register-container {
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.register-box {
+  background-color: #1a0000;
+  padding: 60px 40px 40px;
+  border-radius: 50px;
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 0 30px #000;
+  position: relative; /* NUEVO */
+}
+
+
+.register-left {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-title {
+  color: #ff0000;
+  font-family: serif;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.register-form .input {
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 2px solid #ff0000;
+  background-color: transparent;
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.register-button {
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+  padding: 10px 0;
+  background-color: #2c0000;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #4B0101;
+}
+
+.register-right {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-logo {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  border-radius: 80px;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.1);
+  padding: 5px;
+  border-radius: 2px;
+  border: 1px solid #ff0000;
+}
+
+.register-heading {
+  color: #ff0000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+}
