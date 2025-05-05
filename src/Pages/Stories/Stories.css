@@ -107,7 +107,8 @@ body {
 
 .story-card {
   min-width: 160px;
-  height: auto;
+  height: 50px;
+  width: 50px;
   /* ← Antes tenía una altura fija, cámbialo por auto */
   flex: 0 0 auto;
   background: #262626;

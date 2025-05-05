@@ -26,7 +26,7 @@ const sliderSettings = {
 const terror = [
   { title: "El Cementerio", slug: "el-cementerio", img: "/Assets/el-cementerio.jpg" },
   { title: "Lucifer", slug: "lucifer", img: "/Assets/lucifer.jpg" },
-  { title: "Pacto Oscuro", slug: "pacto-oscuro", img: "/Assets/pacto-oscuro.jpg" },
+  { title: "terror en halloween", slug: "terror en halloween", img: "/Assets/V.jpeg" },
   { title: "El Cementerio", slug: "el-cementerio", img: "/Assets/el-cementerio.jpg" },
   { title: "El Cementerio", slug: "el-cementerio", img: "/Assets/el-cementerio.jpg" },
   { title: "El Cementerio", slug: "el-cementerio", img: "/Assets/el-cementerio.jpg" },
