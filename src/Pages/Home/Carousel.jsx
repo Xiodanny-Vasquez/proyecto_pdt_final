@@ -5,7 +5,7 @@ const images = [
   '/Assets/casaCementerio.jpg',
   '/Assets/portal.jpg',
   '/Assets/diablo.jpg',
-  '/Assets/Ñ.jpeg',
+  '/Assets/Ñ.jpg',
   '/Assets/U.jpg',
   '/Assets/M.png',
   '/Assets/bb.png',
