@@ -12,25 +12,25 @@ import Pago from "./Pages/Shopping/Pago.jsx";
 import Confirmacion from "./Pages/Shopping/Confirmacion.jsx";
 import Login from "./Pages/Login/Login.jsx";
 import Register from "./Pages/Login/Register.jsx";
-import HorrorStories from "./Pages/HorrorStories/HorrorStories.jsx";
+import StoryDetails from "./pagina_de_historias/storyDetails.jsx"; // ← NUEVA RUTA DINÁMICA
 
 function App() {
   return (
     <Router>
-      <Navbar /> {/* Siempre visible */}
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contacto" element={<Contact />} />
         <Route path="/historias" element={<Stories />} />
-        <Route path="/sobre nosotros" element={<About />} />
+        <Route path="/historia/:slug" element={<StoryDetails />} />
+        <Route path="/sobre-nosotros" element={<About />} />
         <Route path="/carrito" element={<Shopping />} />
         <Route path="/pago" element={<Pago />} />
         <Route path="/confirmacion" element={<Confirmacion />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
-      <HorrorStories />
-      <Footer /> {/* Siempre visible */}
+      <Footer />
     </Router>
   );
 }

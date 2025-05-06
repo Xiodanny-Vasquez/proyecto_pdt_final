@@ -1,15 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Shopping.css';
-
-const items = [
-  { id: 1, title: 'La Bruja', type: 'Historias', price: 15000, image: '/Assets/Ñ.jpg' },
-  { id: 2, title: 'Demonios', type: 'Libro', price: 50000, image: '/Assets/T.jpg' },
-  { id: 3, title: 'El Cementerio', type: 'Historias', price: 13000, image: '/Assets/muerte.jpg' }
-];
+import { useCart } from '../../context/CartContext'; // ← Importa el contexto
 
 const Shopping = () => {
-  const total = items.reduce((sum, item) => sum + item.price, 0);
+  const { cart, removeFromCart } = useCart();
+  const total = cart.reduce((sum, item) => sum + item.price, 0);
   const navigate = useNavigate();
 
   const handleConfirm = () => {
@@ -25,19 +21,21 @@ const Shopping = () => {
             <tr>
               <th>Historias</th>
               <th>Descripción</th>
-              <th>Cantidad</th>
+              <th>Quitar</th>
               <th>Precio</th>
             </tr>
           </thead>
           <tbody>
-            {items.map(item => (
+            {cart.map((item) => (
               <tr key={item.id}>
                 <td className="item-info">
                   <img src={item.image} alt={item.title} />
                   <em>{item.title}</em>
                 </td>
-                <td>{item.type}</td>
-                <td>1</td>
+                <td>Libro de terror</td>
+                <td>
+                  <button onClick={() => removeFromCart(item.id)} style={{ background: "none", border: "1px solid #ff0000", color: "#ff0000", padding: "0.3rem 0.8rem", cursor: "pointer" }}>X</button>
+                </td>
                 <td>${item.price.toLocaleString('es-CO')}</td>
               </tr>
             ))}
@@ -47,7 +45,7 @@ const Shopping = () => {
         <div className="summary-box">
           <h3>Resumen</h3>
           <ul>
-            {items.map(item => (
+            {cart.map(item => (
               <li key={item.id}>
                 {item.title} <span>${item.price.toLocaleString('es-CO')}</span>
               </li>
